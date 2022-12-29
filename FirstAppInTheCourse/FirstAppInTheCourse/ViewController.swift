@@ -20,7 +20,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func changeClicked(_ sender: Any) {
-    
+    imageView.image = UIImage(named: "slipknot2")
   }
   
 }
