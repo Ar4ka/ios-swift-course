@@ -16,16 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AR4KA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ade-mW-HNZ">
-                                <rect key="frame" x="122" y="100" width="149" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First App Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e2-GC-y7j">
+                                <rect key="frame" x="90" y="97" width="212" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="vSP-cJ-8pQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slipknot1" translatesAutoresizingMaskIntoConstraints="NO" id="BC9-Rw-vAJ">
+                                <rect key="frame" x="46" y="197" width="301" height="211"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSh-N0-YZ3">
+                                <rect key="frame" x="128" y="436" width="137" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Glb-uD-KZ6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change Image"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3e2-GC-y7j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="1KL-ai-aUe"/>
+                            <constraint firstItem="BC9-Rw-vAJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="Aw9-Xj-bf0"/>
+                            <constraint firstItem="BC9-Rw-vAJ" firstAttribute="top" secondItem="3e2-GC-y7j" secondAttribute="bottom" constant="42" id="Fvg-BD-DlJ"/>
+                            <constraint firstItem="3e2-GC-y7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Glg-f2-ufb"/>
+                            <constraint firstItem="BC9-Rw-vAJ" firstAttribute="centerX" secondItem="RSh-N0-YZ3" secondAttribute="centerX" id="MD9-sd-9vE"/>
+                            <constraint firstItem="3e2-GC-y7j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="Mu8-DV-UKx"/>
+                            <constraint firstItem="3e2-GC-y7j" firstAttribute="centerX" secondItem="BC9-Rw-vAJ" secondAttribute="centerX" id="ZbV-F8-QWm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RSh-N0-YZ3" secondAttribute="bottom" constant="292" id="lk7-q6-gxz"/>
+                            <constraint firstItem="RSh-N0-YZ3" firstAttribute="top" secondItem="BC9-Rw-vAJ" secondAttribute="bottom" constant="28" id="nDU-kw-5N2"/>
+                            <constraint firstItem="RSh-N0-YZ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="rw7-yM-5JM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -34,11 +59,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="slipknot1" width="1008" height="529"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
