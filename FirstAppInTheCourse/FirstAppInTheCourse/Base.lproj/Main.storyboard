@@ -35,6 +35,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Change Image"/>
+                                <connections>
+                                    <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oip-9C-JkZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -52,6 +55,10 @@
                             <constraint firstItem="RSh-N0-YZ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="rw7-yM-5JM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appLabel" destination="3e2-GC-y7j" id="Sd4-GH-hCe"/>
+                        <outlet property="imageView" destination="BC9-Rw-vAJ" id="aIe-Ts-yCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
