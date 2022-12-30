@@ -8,12 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  let myLabel = UILabel()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-    
-    let myLabel = UILabel()
     
     let width = view.frame.size.width
     let height = view.frame.size.height
@@ -24,6 +24,18 @@ class ViewController: UIViewController {
     
     view.addSubview(myLabel)
     
+    let myButton = UIButton()
+    myButton.setTitle("My Button", for: UIControl.State.normal)
+    myButton.setTitleColor(UIColor.blue, for: UIControl.State.normal)
+    myButton.frame = CGRect(x: width * 0.5 - 100, y: height * 0.6, width: 200, height: 200)
+    view.addSubview(myButton)
+    
+    myButton.addTarget(self, action: #selector(ViewController.myAction), for: UIControl.Event.touchUpInside)
+    
+  }
+  
+  @objc func myAction() {
+    myLabel.text = "Tapped"
   }
 
 
