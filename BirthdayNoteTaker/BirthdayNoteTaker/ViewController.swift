@@ -52,7 +52,7 @@ class ViewController: UIViewController {
       
     }
     
-    if (storedDate as? String) != nil {
+    if storedDate is String {
       UserDefaults.standard.removeObject(forKey: "birthday")
       birthdayLabel.text = "Birthday: "
     }
